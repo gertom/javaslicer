@@ -169,6 +169,15 @@ public class Transformer implements ClassFileTransformer {
         // NOTE: these will be cleaned up when the system runs stable
         //////////////////////////////////////////////////////////////////
 
+        if (javaClassName.startsWith("java."))
+            return true;
+        if (javaClassName.startsWith("javax."))
+            return true;
+        if (javaClassName.startsWith("sun."))
+            return true;
+        if (javaClassName.startsWith("jdk."))
+            return true;
+
         if (javaClassName.equals("java.lang.System"))
             return true;
         /*

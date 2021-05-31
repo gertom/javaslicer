@@ -143,8 +143,23 @@
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
-            <artifactId>asm-all</artifactId>
-            <version>5.0.3</version>
+            <artifactId>asm-analysis</artifactId>
+            <version>9.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-commons</artifactId>
+            <version>9.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-tree</artifactId>
+            <version>9.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-util</artifactId>
+            <version>9.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>de.hammacher</groupId>
@@ -158,6 +173,11 @@
             <id>titania</id>
             <name>the students' council's nexus server</name>
             <url>http://titania.fs.uni-saarland.de/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>ow2</id>
+            <name>Java ASM repo</name>
+            <url>https://repository.ow2.org/nexus/content/repositories/snapshots</url>
         </repository>
     </repositories>
 

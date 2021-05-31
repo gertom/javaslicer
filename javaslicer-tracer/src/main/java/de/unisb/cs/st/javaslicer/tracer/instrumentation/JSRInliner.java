@@ -30,11 +30,14 @@ import org.objectweb.asm.commons.JSRInlinerAdapter;
 public class JSRInliner extends ClassVisitor {
 
     public JSRInliner(final ClassVisitor cv) {
-        super(Opcodes.ASM5, cv);
+        super(Opcodes.ASM7, cv);
     }
 
     @Override
     public MethodVisitor visitMethod(final int access, final String name, final String desc, final String signature, final String[] exceptions) {
+        if (name.startsWith("java") || name.startsWith("sun")) {
+            return null;
+        }
         final MethodVisitor visitor = super.visitMethod(access, name, desc, signature, exceptions);
         return visitor == null ? null : new JSRInlinerAdapter(visitor, access, name, desc, signature, exceptions);
     }
