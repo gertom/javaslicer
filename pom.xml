@@ -144,22 +144,27 @@
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-analysis</artifactId>
-            <version>9.2-SNAPSHOT</version>
+            <version>9.2-LOCALBUILD</version>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-commons</artifactId>
-            <version>9.2-SNAPSHOT</version>
+            <version>9.2-LOCALBUILD</version>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-tree</artifactId>
-            <version>9.2-SNAPSHOT</version>
+            <version>9.2-LOCALBUILD</version>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-util</artifactId>
-            <version>9.2-SNAPSHOT</version>
+            <version>9.2-LOCALBUILD</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>9.2-LOCALBUILD</version>
         </dependency>
         <dependency>
             <groupId>de.hammacher</groupId>
